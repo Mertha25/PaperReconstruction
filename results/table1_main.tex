@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\caption{Reconstruction performance on the HEX test set (M=16 sensors, 500 LHS samples).
+\textbf{Bold} = best per column. Tiny ViT highlighted.}
+\label{tab:main}
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{Model} & \textbf{MAE} & \textbf{RMSE} & \textbf{MaxErr} & \textbf{R\textsuperscript{2}} & \textbf{SSIM} & \textbf{HotMAE} & \textbf{HDR} & \textbf{ms} & \textbf{Params} \\
+& (K) & (K) & (K) & & & (K) & (\%) & & (M) \\
+\hline
+RBF & 7.4032 & 15.6375 & 119.89 & 0.6763 & 0.7863 & 9.7120 & 55.2362 & 3.2823 & \textbf{0.0000} \\
+MLP & 7.0630 & 10.1407 & 72.5305 & 0.8639 & 0.9060 & 6.6995 & 91.0468 & \textbf{0.5251} & 27.9300 \\
+U-Net & 0.5971 & 1.1577 & 32.5649 & 0.9982 & 0.9944 & 0.6245 & 98.1125 & 1.8153 & 1.9300 \\
+\rowcolor{gray!15}Tiny ViT & \textbf{0.4076} & \textbf{0.7177} & \textbf{25.6648} & \textbf{0.9993} & \textbf{0.9960} & \textbf{0.5000} & \textbf{98.7318} & 3.1942 & \textbf{0.7500} \\
+FNO-lite & 3.2440 & 7.2418 & 113.16 & 0.9306 & 0.9346 & 5.4194 & 87.9197 & 1.9789 & 1.1800 \\
+\hline
+\end{tabular}
+\end{table}

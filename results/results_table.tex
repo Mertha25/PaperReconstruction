@@ -1,17 +1,0 @@
-\begin{table}[h]
-\centering
-\caption{Reconstruction performance on the HEX test set (M=16 sensors, 500 samples).
-Best results in \textbf{bold}. Our method highlighted in gray.}
-\label{tab:results}
-\begin{tabular}{lrrrrr}
-\hline
-\textbf{Model} & \textbf{MAE (K)} & \textbf{RMSE (K)} & \textbf{Max Err. (K)} & \textbf{R$^2$} & \textbf{Time (ms)} \\
-\hline
-RBF Interpolation & 39777.6094 & 39925.5781 & 55476.4531 & -2110163.250000 & 	extbf{2.1437} \
-MLP & 7.1243 & 10.0693 & 70.4048 & 0.865781 & 10.2421 \
-U-Net & 0.6150 & 1.1833 & 31.4707 & 0.998147 & 64.5779 \
-owcolor{gray!15}Tiny ViT (Ours) & 	extbf{0.3678} & 	extbf{0.6281} & 	extbf{21.3411} & 	extbf{0.999478} & 37.3330 \
-FNO-lite & 3.9775 & 7.8970 & 113.0716 & 0.917445 & 18.8851 \
-\hline
-\end{tabular}
-\end{table}

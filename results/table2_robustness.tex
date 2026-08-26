@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\caption{Robustness evaluation: MAE (K) under sensor noise, dropout, and extreme cases.}
+\label{tab:robustness}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Setting} & \textbf{MLP} & \textbf{U-Net} & \textbf{Tiny ViT} & \textbf{FNO-lite} \\
+\hline
+Hard cases & 15.298 & 1.554 & 1.144 & 5.563 \\
+M=12 sensors & 7.064 & 0.750 & 0.453 & 4.313 \\
+M=16 sensors & 7.063 & 0.597 & 0.408 & 3.244 \\
+M=8 sensors & 7.066 & 1.110 & 0.669 & 6.722 \\
+Noise 1% & 7.063 & 0.983 & 0.655 & 3.295 \\
+Noise 3% & 7.063 & 2.266 & 1.663 & 3.680 \\
+Noise 5% & 7.063 & 3.676 & 2.932 & 4.309 \\
+\hline
+\end{tabular}
+\end{table}
